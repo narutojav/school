@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+    
+    <title>Их Уул</title>
+</head>
+<style>
+        html, body {
+          position: relative;
+          height: 100%;
+        }
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide {
+         display: block;
+        }
+      </style>
+<body> 
+    <div class="row">
+            <div class="col-md-3 left-side">
+                    <span>Шинэ</span>
+                    <h3>Мэдээ</h3>
+                    <a href="#">Бүгдийг үзэх</a>
+                    <div class="arrow">
+                        <a href="#" id="left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        </a>
+                        <a href="#" id="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+        <div class="col-md-9">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <div class="cover">
+                                    <div class="gar"></div>
+                                    <div class="thumb" style="background-image: url(https://scontent.fuln1-2.fna.fbcdn.net/v/t1.0-9/32468734_2144956059123957_3121336532833665024_n.jpg?_nc_cat=107&_nc_ht=scontent.fuln1-2.fna&oh=a4c1688e80519ed6a274b93ea81f6256&oe=5D9DB0D0)"></div>
+                                    <img src="img/5-6.png" alt="">
+                                </div>
+                                <h6>Сумдын баяр наадмын тов гарлаа</h6>
+                                <p>Энэ хонгор морийг харсан үзсэн хүн байна уу баттай сураг гаргаж олж өгсөн хүнд шагналтай шүү 86148687 77810117</p>
+                                <a href="">Read More</a>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+        
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+          </script>  
+</body>
+</html>
